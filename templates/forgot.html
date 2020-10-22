@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <body class="">
+        {% block title %}
+        <title> Forgot Password request Form</title>
+        {% endblock %}
+        {% block content %}
+        <div class="row">
+            <div class="col-md-3"></div>
+
+            <div style="margin-bottom: 250px; margin-top: 100px; background-color: aliceblue;" class="col-md-6 py-3">
+            <h2 class="py-3">Reset Password</h2>
+            <form method="POST">
+                <div class="form-group">
+                    <lable for="inputAddress">Email Address</lable>
+                    <input name="email" type="email" class="form-control" id="inpuyAddress" placeholder="Enter Your Email Address">
+                    
+                </div>
+                <button style="background-color: #ff3f20 !important;" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        {% endblock %}
+    </body>
+ </html>
